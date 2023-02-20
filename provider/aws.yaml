@@ -1,3 +1,4 @@
+provider: aws
 name: AWS
 sync_mode: MANUAL
 sync_options:
