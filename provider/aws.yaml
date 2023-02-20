@@ -1,0 +1,22 @@
+name: AWS
+sync_mode: MANUAL
+description:
+    identity.ServiceAccount: DYNAMIC_FIELD_MARKDOWN
+    inventory.Collector: DYNAMIC_FIELD_MARKDOWN
+schema:
+    identity.ServiceAccount: 'aws_service_account'
+    secret.TrustedSecret: 'aws_access_key'
+    secret.Secret:
+        - 'aws_assume_role'
+capability:
+    trusted_service_accunt: ENABLED
+color: FF9933
+icon: s3://spaceone-custome-assets
+reference:
+    identity.ServiceAccount:
+        Link: template
+labels:
+    - label_1
+    - label_2
+tags:
+    key: value
