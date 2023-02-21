@@ -25,6 +25,5 @@ reference:
         Link: template
 labels:
     - label_1
-    - label_2
 tags:
     key: value
