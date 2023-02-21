@@ -6,7 +6,7 @@ sync_options:
     source_type: GITHUB
     source:
         url: https://github.com/GJ-playgroud/managed-repository-resources
-        path: /provider/aws.yaml
+        path: /provider/awk.yaml
         #secret_data: sensitive information
 description:
     identity.ServiceAccount: DYNAMIC_FIELD_MARKDOWN
