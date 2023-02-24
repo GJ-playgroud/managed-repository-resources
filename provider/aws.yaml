@@ -4,7 +4,7 @@ sync_mode: MANUAL
 sync_options:
     source_type: GITHUB
     source:
-        url: https://github.com/cloudforet-io/managed-repository-resources.git
+        url: https://github.com/cloudforet-io/managed-repository-resources
         path: /provider/aws.yaml
         secret_data:
             token: 'TOKEN'
