@@ -1,29 +1,36 @@
 provider: aws
-name: AWS_from_GJ-playground
+name: AWS
 sync_mode: MANUAL
-# sync_mode: NONE
 sync_options:
     source_type: GITHUB
     source:
-        url: https://github.com/GJ-playgroud/managed-repository-resources
+        url: https://github.com/cloudforet-io/managed-repository-resources.git
         path: /provider/aws.yaml
-        #secret_data: sensitive information
+        secret_data:
+            token: 'TOKEN'
 description:
-    identity.ServiceAccount: DYNAMIC_FIELD_MARKDOWN
-    inventory.Collector: DYNAMIC_FIELD_MARKDOWN
+    - resource_type: 'identity.ServiceAccount'
+      body: {}
 schema:
-    identity.ServiceAccount: 'aws_service_account'
-    secret.TrustedSecret: 'aws_access_key'
-    secret.Secret:
-        - 'aws_assume_role'
+    - resource_type: 'identity.ServiceAccount'
+      schema_id: 'aws_service_account'
+    - resource_type: 'secret.TrustedSecret'
+      schema_id: 'aws_access_key'
+    - resource_type: 'secret.Secret'
+      secret_type: 'GENERAL'
+      schema_id: 'aws_access_key'
+    - resource_type: 'secret.Secret'
+      secret_type: 'TRUSTED'
+      schema_id: 'aws_assume_role'
 capability:
-    trusted_service_account: ENABLED
+    trusted_service_accunt: ENABLED
 color: FF9933
 icon: s3://spaceone-custome-assets
 reference:
-    identity.ServiceAccount:
-        Link: template
+    - resource_type: 'identity.ServiceAccount'
+      link: {}
 labels:
     - label_1
+    - label_2
 tags:
     key: value
