@@ -23,7 +23,7 @@ schema:
       secret_type: 'TRUSTED'
       schema_id: 'aws_assume_role'
 capability:
-    trusted_service_accunt: ENABLED
+    trusted_service_account: ENABLED
 color: FF9933
 icon: s3://spaceone-custome-assets
 reference:
