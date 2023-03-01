@@ -1,5 +1,5 @@
 provider: aws
-name: AWS-GJ-Playground-2
+name: AWS
 sync_mode: MANUAL
 sync_options:
     source_type: GITHUB
