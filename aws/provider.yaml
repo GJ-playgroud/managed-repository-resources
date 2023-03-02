@@ -1,5 +1,5 @@
 provider: aws
-name: AWS
+name: AWS-cache
 sync_mode: MANUAL
 sync_options:
     source_type: GITHUB
