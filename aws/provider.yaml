@@ -10,15 +10,15 @@ description:
       body: {}
 schema:
     - resource_type: 'identity.ServiceAccount'
-      schema_id: 'aws_service_account'
+      schema_id: 'aws-service-account'
     - resource_type: 'secret.TrustedSecret'
-      schema_id: 'aws_access_key'
+      schema_id: 'aws-access-key'
     - resource_type: 'secret.Secret'
       secret_type: 'GENERAL'
-      schema_id: 'aws_access_key'
+      schema_id: 'aws-access-key'
     - resource_type: 'secret.Secret'
       secret_type: 'TRUSTED'
-      schema_id: 'aws_assume_role'
+      schema_id: 'aws-assume-role'
 capability:
     trusted_service_account: ENABLED
 color: FF9933
