@@ -1,1 +1,13 @@
-{}
+schema_id: random_schema_id
+name: aws_assume_role
+sync_mode: MANUAL
+sync_options:
+    source_type: GITHUB
+    source:
+        url: GJ-playgroud/managed-repository-resources/aws/schema.yaml
+schema: {}
+labels:
+    - label_1
+    - label_2
+tags:
+    key: value
