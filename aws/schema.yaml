@@ -4,7 +4,8 @@ sync_mode: MANUAL
 sync_options:
     github:
         url: GJ-playgroud/managed-repository-resources/aws/schema.yaml
-schema: {}
+schema: 
+    name: hogehoge
 labels:
     - label_1
     - label_2
