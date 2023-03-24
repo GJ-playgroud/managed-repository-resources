@@ -2,8 +2,7 @@ provider: aws
 name: AWS
 sync_mode: MANUAL
 sync_options:
-    source_type: GITHUB
-    source:
+    github: 
         url: GJ-playgroud/managed-repository-resources/aws/provider.yaml
 description:
     - resource_type: 'identity.ServiceAccount'
