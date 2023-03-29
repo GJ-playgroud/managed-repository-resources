@@ -1,0 +1,13 @@
+schema_id: schema_0324
+name: google_assume_role
+sync_mode: MANUAL
+sync_options:
+    github:
+        url: GJ-playgroud/managed-repository-resources/google/schema.yaml
+schema: 
+    name: hogehoge
+labels:
+    - label_1
+    - label_2
+tags:
+    key: value
